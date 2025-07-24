@@ -14,10 +14,16 @@ struct ContentView: View {
                 Text("HOME PAGE/ROOT PAGE √")
                 NavigationLink(destination: SecondView()) {
                     Text("GO TO THE NEXT PAGE")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.purple)
                 }
             }
         
             .padding()
+            
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
     }
 }
